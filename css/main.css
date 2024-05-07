@@ -1,8 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-size: 14px;
   font-family: Viga;
   background: rgb(32, 32, 32);
 }
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav ul li {
+  color: #fff;
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  transform: translateY(-5px);
+  transition: all 0.2s;
+  font-weight: bold;
+}
+
 .fundo {
   width: 100%;
   height: 3446px;
@@ -12,6 +42,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
+
 .logo {
   background-repeat: no-repeat;
   background-position: center center;
@@ -21,7 +52,9 @@ body {
   top: 5px;
   left: 67px;
   overflow: hidden;
+  cursor: pointer;
 }
+
 .list_jog {
   width: 237px;
   color: rgba(255,255,255,1);
@@ -35,6 +68,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .como_func {
   width: 196px;
   color: rgba(255,255,255,1);
@@ -48,6 +82,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .contato {
   width: 100px;
   color: rgba(255,255,255,1);
@@ -61,6 +96,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .cadastrar {
   width: 126px;
   color: rgba(255,255,255,1);
@@ -74,6 +110,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .banner {
   width: 100%;
   height: 713px;
@@ -87,6 +124,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
+
 .jogos_dest {
   width: 350px;
   color: rgb(13, 0, 255);
@@ -101,6 +139,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .novi {
   width: 353px;
   color: rgba(255,255,255,1);
@@ -114,6 +153,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .como_func2 {
   width: 380px;
   color: rgba(255,255,255,1);
@@ -127,6 +167,7 @@ body {
   opacity: 1;
   text-align: left;
 }
+
 .como_func3 {
   width: 470px;
   color: rgba(255,255,255,1);
@@ -158,6 +199,7 @@ body {
   border-bottom-right-radius: 29px;
   overflow: hidden;
 }
+
 .capa_fifa {
   width: 300px;
   height: 400px;
@@ -175,6 +217,7 @@ body {
   border-bottom-right-radius: 29px;
   overflow: hidden;
 }
+
 .capa_spider {
   width: 300px;
   height: 400px;
@@ -192,6 +235,7 @@ body {
   border-bottom-right-radius: 29px;
   overflow: hidden;
 }
+
 .capa_hogwarts {
   width: 300px;
   height: 400px;
@@ -209,6 +253,7 @@ body {
   border-bottom-right-radius: 29px;
   overflow: hidden;
 }
+
 .capa_mortal {
   width: 300px;
   height: 400px;
@@ -226,6 +271,7 @@ body {
   border-bottom-right-radius: 29px;
   overflow: hidden;
 }
+
 .capa_como {
   width: 100%;
   height: 354px;
@@ -239,6 +285,7 @@ body {
   left: 0px;
   overflow: hidden;
 }
+
 .ban_esquer {
   width: 500px;
   height: 850px;
@@ -253,6 +300,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .ban_esquer2 {
   width: 500px;
   height: 100px;
@@ -267,6 +315,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .ban_esquer3 {
   width: 170px;
   height: 50px;
@@ -281,6 +330,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .ban_dire {
   width: 500px;
   height: 850px;
@@ -295,6 +345,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .ban_dire2 {
   width: 500px;
   height: 100px;
@@ -309,6 +360,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .ban_dire3 {
   width: 170px;
   height: 50px;
@@ -323,6 +375,7 @@ body {
   border-bottom-right-radius: 46px;
   overflow: hidden;
 }
+
 .tex_ban_esquer {
   width: 500px;
   color: rgba(255,255,255,1);
@@ -336,6 +389,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_esquer2 {
   width: 50px;
   color: rgba(255,255,255,1);
@@ -350,6 +404,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_esquer3 {
   width: 500px;
   color: red;
@@ -363,6 +418,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_esquer4 {
   width: 200px;
   color: rgba(255,255,255,1);
@@ -377,6 +433,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_dire {
   width: 500px;
   color: rgba(255,255,255,1);
@@ -390,6 +447,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_dire2 {
   width: 50px;
   color: rgba(255,255,255,1);
@@ -404,6 +462,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_dire3 {
   width: 500px;
   color: red;
@@ -417,6 +476,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_ban_dire4 {
   width: 200px;
   color: rgba(255,255,255,1);
@@ -431,6 +491,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .rodape {
   width: 2020px;
   height: 400px;
@@ -441,6 +502,7 @@ body {
   left: 1px;
   overflow: hidden;
 }
+
 .logo_rodape {
   width: 200px;
   height: 200px;
@@ -454,6 +516,7 @@ body {
   left: 300px;
   overflow: hidden;
 }
+
 .tex_menu_rodape {
   width: 500px;
   color: rgb(13, 0, 255);
@@ -468,6 +531,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_list_rodape {
   width: 237px;
   color: rgba(255,255,255,1);
@@ -481,6 +545,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_como_rodape {
   width: 237px;
   color: rgba(255,255,255,1);
@@ -494,6 +559,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_cont_rodape {
   width: 237px;
   color: rgba(255,255,255,1);
@@ -507,6 +573,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_contato_rodape {
   width: 500px;
   color: rgb(13, 0, 255);
@@ -521,6 +588,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .tex_hora_rodape {
   width: 400px;
   color: rgba(255,255,255,1);
@@ -534,6 +602,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .img_hora_rodape {
   width: 35px;
   height: 35px;
@@ -547,6 +616,7 @@ body {
   left: 965px;
   overflow: hidden;
 }
+
 .tex_tele_rodape {
   width: 300px;
   color: rgba(255,255,255,1);
@@ -560,6 +630,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .img_tele_rodape {
   width: 35px;
   height: 35px;
@@ -573,6 +644,7 @@ body {
   left: 965px;
   overflow: hidden;
 }
+
 .tex_mail_rodape {
   width: 300px;
   color: rgba(255,255,255,1);
@@ -586,6 +658,7 @@ body {
   opacity: 1;
   text-align: center;
 }
+
 .img_mail_rodape {
   width: 50px;
   height: 50px;
@@ -598,12 +671,4 @@ body {
   top: 3390px;
   left: 960px;
   overflow: hidden;
-}
-.btn:hover{
-  color: #101dd9;
-  transition: 0.3s all;
-}
-a{
-  color: #FFFFFF;
-  text-decoration: none;
 }
