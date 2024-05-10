@@ -40,7 +40,7 @@ body {
  }
  
  .navbar {
-   background-color: rgb(32, 32, 32);
+   background-color: rgb(48, 48, 48);
    position: sticky;
    top: 0;
    z-index: 99;
