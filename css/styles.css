@@ -6,6 +6,10 @@ body {
 	background: rgb(32, 32, 32);
   }
 
+.gray-background {
+		background-color: rgb(48, 48, 48);
+}
+
 .logo img{
 	width: 100px;
 	height: 100px;
@@ -102,278 +106,241 @@ nav ul li:hover {
  font-weight: bold;
 }
 
-.banner { 
-		width: 100%;
-    background: url(images/banner_final_1.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
+/* Medias Queries */
+@media (max-width: 800px) {
+  .logo {
+    font-size: 1.2rem;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .header-bottom-side {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 4rem;
+  }
+
+  nav {
     position: absolute;
-    left: 0px;
+    background-color: #2c2c2c4d;
+    width: 100%;
+    top: 46px;
+    display: none;
+  }
+
+  .show-menu nav {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    text-align: center;
+    padding: 0.8rem;
+  }
+}
+
+
+.page-inner-content {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.cols {
+  display: grid;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4rem 1rem;
+}
+
+ .cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.cols-3 img {
+  max-width: 100%;
+}
+
+.cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.cols > * {
+  cursor: pointer;
+  transition: all 0.2;
+}
+
+.cols > *:hover {
+  transform: translate(-5px);
+}
+
+.cols-4 img {
+  max-width: 100%;
+}
+
+
+.section-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.subtitle-underline {
+  width: 100px;
+  height: 5px;
+  background: #2d02ea;
+  border-radius: 9999px;
+  margin: 8px auto 0 auto;
+}
+
+.product {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-name {
+  font-weight: 600;
+  margin-top: 0.4rem;
+  padding: 0px;
+}
+
+.rate {
+  padding: 0px;
+  color: #ebef05;
+  font-size: 1.3rem;
+}
+
+.product-price span {
+  font-weight: 600;
+}
+
+.exclusive-container {
+  color: #fff;
+  flex-direction: row-reverse;
+  padding: 5rem 1rem;
+}
+
+/*Media Queries*/
+
+@media (max-width: 800px) {
+  .section-title {
+    font-size: 1rem;
+  }
+
+  .cols-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .cols-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-name,
+  .product-price,
+  .rate {
+    max-height: 1rem;
     overflow: hidden;
-}
-
-img {
-	width:431px;
-	height:431px;
-	left:40px;
-	top:930px;
-}
-.fc { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:200px;
-	top:400px;
-	background-image:url(images/fifa_24.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.spider { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:800px;
-	top:400px;
-	background-image:url(images/spider_man_2.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.gta { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:1400px;
-	top:400px;
-	opacity: 30%;
-	background-image:url(images/gta_6.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.gow { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:200px;
-	top:1000px;
-	background-image:url(images/god.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.star { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:800px;
-	top:1000px;
-	background-image:url(images/starfiled.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.hog { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:1400px;
-	top:1000px;
-	background-image:url(images/hogwarts.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.cod { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:200px;
-	top:1600px;
-	background-image:url(images/cod.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.mk1 { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:800px;
-	top:1600px;
-	background-image:url(images/mk1.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.alan { 
-	width:431px;
-	height:431px;
-	position:absolute;
-	left:1400px;
-	top:1600px;
-	background-image:url(images/alan_wake.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-
-.rodape { 
-	width: 1900px;
-  height: 400px;
-  background: rgb(48, 48, 48);
-  opacity: 1;
-  position: absolute;
-  top: 2200px;
-  left: 1px;
-  overflow: hidden;
-}
-
-.email_roda { 
-	width: 300px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2450px;
-  left: 1000px;
-  font-family: Viga;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-}
-.contato { 
-	width: 500px;
-  color: rgb(13, 0, 255);
-  position: absolute;
-  top: 2250px;
-  left: 800px;
-  font-family: Viga;
-  font-weight: bold;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 35px;
-  opacity: 1;
-  text-align: center;
-}
-
-
-.hora_roda { 
-	width: 400px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2320px;
-  left: 1000px;
-  font-family: Viga;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-}
-.num_roda { 
-	width: 400px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2380px;
-  left: 890px;
-  font-family: Viga;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-}
-.logo_roda { 
-	width:200px;
-	height:200px;
-	position:absolute;
-	left: 300px;
-	top: 2250px;
-	background-image:url(/images/v401_7.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.img_hora { 
-	width: 35px;
-  	height: 35px;
-	position:absolute;
-	left: 965px;
-	top: 2320px;
-	background-image:url(/images/hora.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.img_tel { 
-	width: 35px;
-  	height: 35px;
-	position:absolute;
-	left: 965px;
-	top: 2380px;
-	background-image:url(/images/img_tele.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.img_carta { 
-	width: 50px;
-  	height: 50px;
-	position:absolute;
-	left: 960px;
-	top: 2440px;
-	background-image:url(/images/img_mail.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-}
-.lista_roda { 
-	width: 237px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2320px;
-  left: 559px;
-  font-family: Viga;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-}
-.como_roda { 
-	width: 237px;
-  color: rgba(255,255,255,1);
-  position: absolute;
-  top: 2380px;
-  left: 568px;
-  font-family: Viga;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 25px;
-  opacity: 1;
-  text-align: center;
-}
-
-.menu { 
-	width: 500px;
-  color: rgb(13, 0, 255);
-  position: absolute;
-  top: 2250px;
-  left: 410px;
-  font-family: Viga;
-  font-weight: bold;
-  text-shadow: 0.1em 0.1em 0.2em black;
-  font-weight: Regular;
-  font-size: 35px;
-  opacity: 1;
-  text-align: center;
-}
-.btn:hover{
-	color: #101dd9;
-	transition: 0.3s all;
+    font-size: 0.8rem;
   }
-  a{
-	color: #FFFFFF;
-	text-decoration: none;
+
+  .exclusive-container {
+    flex-direction: column-reverse;
   }
- .em_breve { 
-	width:220px;
-	height:188px;
-	position:absolute;
-	left:1400px;
-	top:400px;
-	background-image:url(/images/em_breve.png);
-	background-repeat:no-repeat;
-	background-size:cover;
+
+  .exclusive-container img {
+    margin-bottom: 4rem;
+  }
 }
+
+/*Main Content*/
+
+/* Footer */
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  color: #8f8f8f;
+  padding: 1rem 1rem;
+  gap: -2rem;
+}
+
+.download-options > * {
+  margin: 1rem 0;
+}
+
+.download-options > p:first-child {
+  font-weight: bold;
+  color: #fff;
+}
+
+.download-options > div {
+  display: flex;
+}
+
+.download-options > div img {
+  width: 180px;
+}
+
+.logo-footer > img{
+  align-items: center;
+  place-content: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+}
+
+.links-footer h3 {
+  color: #2d02ea;
+  margin-bottom: 0.8rem;
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.links-footer ul {
+  list-style: none;
+}
+
+.links-footer ul li {
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.links-footer ul li img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 800px) {
+  .footer-content {
+    display: inline;
+    font-size: 0.8rem;
+  }
+
+  .footer-content > div {
+    padding: 1rem;
+  }
+
+  .download-options > div {
+    display: inline;
+  }
+
+  .download-options > div img {
+    width: 120px;
+  }
+}
+/* Footer */

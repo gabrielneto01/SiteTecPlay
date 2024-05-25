@@ -220,7 +220,7 @@ main {
 .subtitle-underline {
   width: 100px;
   height: 5px;
-  background: #0084ff;
+  background: #2d02ea;
   border-radius: 9999px;
   margin: 8px auto 0 auto;
 }
@@ -318,7 +318,7 @@ main {
 }
 
 .header-bottom-side-left button {
-  background-color: #0084ff;
+  background-color: #2d02ea;
   border: none;
   cursor: pointer;
   padding: 0.8rem 3.8rem;
@@ -330,7 +330,7 @@ main {
 }
 
 .header-bottom-side-left button:hover {
-  background-color: #0084ff;
+  background-color: #2d02ea;
 }
 
 .header-bottom-side-rigth {
@@ -377,7 +377,7 @@ main {
 .testimonial p:first-child {
   font-weight: bold;
   font-size: 5rem;
-  color: #0084ff;
+  color: #2d02ea;
   margin-top: 3rem;
   line-height: 2rem;
 }
@@ -400,6 +400,7 @@ main {
 /*Testimonials*/
 
 /* Footer */
+
 .footer-content {
   display: flex;
   align-items: center;
@@ -425,13 +426,20 @@ main {
   width: 180px;
 }
 
-.logo-footer {
+.logo-footer > img{
+  align-items: center;
+  place-content: center;
   text-align: center;
+  width: 100px;
+  height: 100px;
 }
 
 .links-footer h3 {
-  color: #fff;
+  color: #2d02ea;
   margin-bottom: 0.8rem;
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
 }
 
 .links-footer ul {
@@ -441,6 +449,15 @@ main {
 .links-footer ul li {
   margin-bottom: 0.5rem;
   cursor: pointer;
+  color: white;
+  margin: 5px;
+  padding: 5px;
+  font-size: 24px;
+}
+
+.links-footer ul li img {
+  width: 30px;
+  height: 30px;
 }
 
 /* Media Queries */
