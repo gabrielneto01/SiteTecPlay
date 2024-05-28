@@ -243,7 +243,6 @@ nav ul li:hover {
 }
 
 .container {
-  background-color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -285,15 +284,22 @@ main h3{
   font-size: 1.8rem;
 }
 
+
 .subtitle-underline {
   text-decoration: none;
-  background: #2d02ea;
+  color: white;
   border-radius: 9999px;
+  background-color: #2d02ea;
   border: none;
   cursor: pointer;
   padding: 0.8rem 3.8rem;
   border-radius: 9999px;
-  font-weight: 900px;
+}
+
+.subtitle-underline a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
 
 /* Main */
